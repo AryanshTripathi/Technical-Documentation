@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: "Roboto";
+}
+
+#container {
+	width: 90vw;
+	padding: 5px;
+	margin: auto;
+}
+
+#navbar {
+	position: fixed;
+	height: 100%;
+	padding: 1em;
+	width: 30%;
+}
+
+#navbar > header {
+	height: 15%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1em 0.5em 0.5em 0.5em;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+#navbar > ul {
+	padding-left: 0;
+	padding-right: 0;
+	overflow-y: scroll;
+	max-height: 85%;
+}
+
+#navbar > ul > a > li {
+	list-style-type: none;
+	border-top: 3px solid #bbb;
+	margin: 0;
+	padding: 1em 0 1em 0;
+	color: #4d4e53;
+}
+
+#navbar > ul > a > li:hover {
+	cursor: pointer;
+}
+
+#navbar > ul > a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+#main-doc {
+	margin-left: 30%;
+	position: absolute;
+	padding: 2em 0 1em 0;
+}
+
+.main-section {
+	border-top: 3px dashed #bbb;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
+.main-section > header {
+	font-size: 2em;
+	padding-bottom: 0.5em;
+}
+
+code {
+	background-color: #f7f7f7;
+	display: block;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+.main-section > p > a {
+	color: blue;
+}
+
+@media only screen and (max-width: 750px) {
+	#navbar {
+		position: static;
+		padding: 0.3em;
+		width: 90%;
+		margin: 2px auto;
+		height: 50vh;
+		border: 2px solid black;
+	}
+	#main-doc {
+		padding: 2em 1em 1em 1em;
+		margin: 0;
+		width: 80%;
+	}
+	#navbar > header {
+		margin: 0 auto;
+		text-align: center;
+		padding: 0.1em;
+		font-size: 1.5em;
+		font-weight: 500;
+	}
+}
+
+#to-top-btn {
+	padding-top: 5px;
+	z-index: 1;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	/* display: none; */
+	position: fixed;
+	bottom: 3vh;
+	right: 2vw;
+}
+
+#to-top-btn {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
